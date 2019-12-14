@@ -4,20 +4,25 @@ A tool for unbundling packages or bundled source files.
 
 Contains some packages from `internal` of [tools](https://github.com/golang/tools.git)
 
-Attention : previously unbundled files get deleted on re-run.
+Note : previously unbundled files get deleted on re-run.
 
 Usage: unbundle [options] <package_or_file>
 
 Where the options are :
-  	-dst path
+
+  -dst path
      	set destination unbundled path (e.g. `D:\inspect\rebundle`) - default `unbundled`
-   -newpkg name
+
+  -newpkg name
      	set destination package name and folder inside the destination `path` (e.g. `http`)
-   -privfunc string
+
+  -privfunc string
      	private functions file (no extension) (default "private_fns")
-   -pubfunc string
+
+  -pubfunc string
      	public functions file (no extension) (default "public_fns")
-   -types string
+
+  -types string
      	types definition file (no extension) (default "defs")
 
 # Examples    	
@@ -36,4 +41,4 @@ unbundle --types="_types" --newpkg="http" --dst="unbundled" --privfunc="_prv" --
 
 # Why?
 
-Splitting the atoms.
+Splitting the atoms. 
