@@ -1,4 +1,4 @@
-package unbundle
+package main
 
 import (
 	"bytes"
